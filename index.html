@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1>POKÉDEX</h1>
+  <p>Enciclopedia Pokémon</p>
+</header>
+
+  <main>
+   
+<section class="controls">
+  <input type="text" id="search" placeholder="Buscar Pokémon...">
+
+  <select id="generation">
+    <option value="1">Generación I - Kanto</option>
+    <option value="2">Generación II - Johto</option>
+    <option value="3">Generación III - Hoenn</option>
+    <option value="4">Generación IV - Sinnoh</option>
+    <option value="5">Generación V - Teselia</option>
+    <option value="6">Generación VI - Kalos</option>
+    <option value="7" selected>Generación VII - Alola</option>
+    <option value="8">Generación VIII - Galar</option>
+    <option value="9">Generación IX - Paldea</option>
+  </select>
+
+  <select id="type-filter">
+    <option value="all">Todos los tipos</option>
+    <option value="normal">Normal</option>
+    <option value="fire">Fuego</option>
+    <option value="water">Agua</option>
+    <option value="grass">Planta</option>
+    <option value="electric">Eléctrico</option>
+    <option value="ice">Hielo</option>
+    <option value="fighting">Lucha</option>
+    <option value="poison">Veneno</option>
+    <option value="ground">Tierra</option>
+    <option value="flying">Volador</option>
+    <option value="psychic">Psíquico</option>
+    <option value="bug">Bicho</option>
+    <option value="rock">Roca</option>
+    <option value="ghost">Fantasma</option>
+    <option value="dragon">Dragón</option>
+    <option value="dark">Siniestro</option>
+    <option value="steel">Acero</option>
+    <option value="fairy">Hada</option>
+  </select>
+</section>
+
+    <h2 id="title">Pokémon de Alola</h2>
+    <section id="pokemon-list" class="pokemon-list"></section>
+
+    <button id="load-more">Cargar más Pokémon</button>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button id="close-modal">✕</button>
+      <div id="pokemon-details"></div>
+    </div>
+  </div>
+
+  <footer>6
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
